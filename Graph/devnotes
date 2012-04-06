@@ -1,0 +1,87 @@
+
+TODOs
+==========
+Functional
+[ ] veto movements which cause overlaps
+	- auto-translate on overlap locations.
+	
+[ ] add info text to bottom of gui
+	- current state, possible actions
+	- graph statistics
+	
+[ ] Build GraphModelGenerator's
+	- Two types: generate graph or take arbitrary Graph as input and draw it
+	
+[ ] Implement graph model serialization
+	- XML?  Why not.
+	- extensible attributes
+	[ ] load
+	[ ] save
+	
+Code Cleanup
+[/] clean up VertexShape, EdgeShape hierarchy.
+	- implements GraphShape
+	- Edge baseclass
+	
+	- Vertices and edges point to each other (PERF)
+
+
+Design Notes
+==========
+
+Graph View Design
+----------
+
+Support these actions (* required, + soon, - later):
+
+* Click to add vertex
+	 o auto number
+
+* Click to add edge
+
+- Save graph
+- Load graph
+
+Requirements
+* Real-time feedback
+* Upon action completion:
+	o notify model
+	o refresh view
+	
+
+Graph Controller
+----------
+
+States:
+1. Ready
+2. Vertex move (1->mouse down)
+3. Vertex create (1->click)
+4. Edge create (1->mod-mouse down)
+5. Vertex select (1->click)
+6. Edge select (1->click)
+
+Graph Model
+----------
+
+o Contains non-transient graph and drawing state.
+	o Objects and locations
+
+API
+
+hitDetect(coord) -> {Edge, Vertex, null)
+addVertex(coord) -> boolean success
+removeVertex(Vertex) -> success
+addEdge(Vertex, Vertex)
+removeEdge(Edge) -> success
+moveVertex(Vertex) -> success
+getShapes() -> iterator
+
+DATA STRUCTURES
+
+Edges
+- List of edges {VS_a, VS_b, Line2D}
+
+
+
+SCRATCH
+

@@ -1,0 +1,21 @@
+** Graph Ape
+
+A simple GUI app, written in Java, which displays and generates graphs.
+
+I created this as a platform to play around with graph drawing algorithms, which
+can get quite interesting and involved.
+
+** Some things to try.
+
+Click to create vertices.  Click on a vertex to highlight it and to unhighlight
+it.
+
+When a vertex is highlighted, clicking on another allows you to create an edge.
+
+When a vertex is highlighted, pressing the Delete key will remove it.
+
+A tree generation algorithm is available in the Generate menu.
+
+Save and Load Graph functions are not yet implemented.
+
+Last updated 2005.
