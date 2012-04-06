@@ -1,11 +1,20 @@
-** Graph Ape
+***** Graph Ape
 
 A simple GUI app, written in Java, which displays and generates graphs.
 
 I created this as a platform to play around with graph drawing algorithms, which
-can get quite interesting and involved.
+can get quite interesting and involved.  Wrote this on the way back from a long
+road trip.
 
-** Some things to try.
+***** Demo and JavaDoc
+
+JavaDoc:
+http://fabbrication.net/pro/project/GraphApp/GraphApp-0.1/Graph/doc/
+
+Demo (launched as applet):
+http://fabbrication.net/pro/project/GraphApp/GraphApp-0.1/index.php
+
+***** Some things to try.
 
 Click to create vertices.  Click on a vertex to highlight it and to unhighlight
 it.
@@ -18,4 +27,4 @@ A tree generation algorithm is available in the Generate menu.
 
 Save and Load Graph functions are not yet implemented.
 
-Last updated 2005.
+***** Last updated 2005.
